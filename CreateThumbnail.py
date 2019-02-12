@@ -44,24 +44,20 @@ def resize_image(image_path, resized_path, size):
     width, height = image.size
     ratio=width/height
     if size=='small':
-      if width>90:
         width=90
-        height=height*90/width
-      if height>=90:
         height=90
-        width=width*90/height
     if size=='medium':
-      if width > height:
+      if height > width:
         height=180
         width=180*width/height
-      if height >= width:
+      if height <= width:
         width=180
         height=180*height/width
     if size=='large':
-      if width > height:
+      if width < height:
         height=270
         width=270*width/height
-      if height >= width:
+      if height <= width:
         width=270
         height=270*height/width
 
