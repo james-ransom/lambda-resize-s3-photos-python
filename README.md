@@ -1,6 +1,7 @@
 # README #
 
-This repro is responsible for the aws lambda code that resizes images put into the folder afterschool-photos
+lambda-resize-s3-photos-python: Resize images uploaded to your s3 bucket automatically.  
+
 
 ### Creating the lambda
 ```bash
